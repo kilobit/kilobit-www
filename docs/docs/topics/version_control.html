@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html">
+  <meta name="revisit-after" content="1 hours">
+
+  <title>Managing Version Control</title>
+
+  <meta name="author" content="Christian Saunders">
+
+  <meta name="description" content="">
+  <meta name="generator" content="pandoc">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="/css/kilobit.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="title">
+      <p class="logo">Kilobit Labs Inc.</p>
+      <h1>Managing Version Control</h1>
+      <hr>
+    </div>
+  </header>
+
+  <main>
+    <div class="content">
+      <p><img src="/img/version_control_v1.png" class="hero" /></p>
+      <p>Small decisions at the beginning of a project can sometimes have much larger and difficult to predict impacts later on. Version control and repository layout are one of those areas where it is important to think ahead and avoid the need for awkward check-in procedures or messy restructuring later.</p>
+      <h1 id="mono-vs-multi-repo" class="mono">Mono vs Multi Repo</h1>
+      <p>The <em>monorepo</em> vs <em>multirepo</em> issue is about balancing ease of management (particularly at the beginning of a project) with modular design and loose coupling.</p>
+      <p>The risk with a <em>multirepo</em> strategy is that it may introduce dependency loops which will lead to build and reliability issues.</p>
+      <p>With a <em>monorepo</em> the issue is that build and test must look at all of the systems / code at every check-in. This means longer development cycles, build platform complexity and development systems that require the full suite of tooling etc.</p>
+      <p>The solution is to understand the major components and the way that they interact within the system as a whole. Dependencies should be unidirectional and repositories should be cohesive, that is, have one responsibility.</p>
+      <p>Consider the functionality of the component in question. Will it be used across other components? If so, consider creating a new repository.</p>
+      <p>This will likely mean some increased complexity in the build / test / deploy process but if done judiciously it should be manageable.</p>
+      <p>This also means that you may need to split functionality out of a repo and re-work the build pipeline from time to time.</p>
+      <p>No solution is perfect but this seems to balance the <em>pragmatic</em> need to get things done while preserving <em>agility</em>.</p>
+      <hr>
+    </div>
+  </main>
+
+  <footer>
+    <p class="copyright">&copy; 2019 Kilobit Labs Inc.</p>
+  </footer>
+
+</body>
+</html>
