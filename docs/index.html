@@ -7,54 +7,244 @@
 
   <title>Home</title>
 
+  <link rel="icon" type="image/png" href="/img/favicon-16.png">
+  
   <meta name="author" content="Christian Saunders">
 
   <meta name="description" content="">
   <meta name="generator" content="pandoc">
   <meta name="keywords" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<meta name="viewport" content="width=device-width, --
+    --initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
   
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/kilobit.css">
+  <link rel="stylesheet" href="css/projects.css">
 </head>
 
 <body>
 
   <header>
-    <div class="title">
-      <p class="logo">Kilobit Labs Inc.</p>
+    <div class="logo">
+      <a href="/"><img class="logo" src="/img/logo_v3.png" alt="Kilobit Labs Logo"></a>
       <h1>Home</h1>
-      <hr>
+      
+      
     </div>
   </header>
 
+  <nav role="navigation" class="top-menu">
+    <ul class="top-menu">
+      <li><a href="/" class="top-menu-item">Home</a></li>
+      <li><a href="/projects.html" class="top-menu-item">Projects</a></li>
+      <li>
+	<a href="/services.html" class="top-menu-item">Services</a>
+	<ul class="top-submenu">
+	  <li><a href="/services.html#consulting" class="top-menu-item">Consulting</a></li>
+  	  <li><a href="/services.html#development" class="top-menu-item">Development</a></li>
+  	  <li><a href="/services.html#managed-services" class="top-menu-item">Managed Services</a></li>
+	</ul>
+      </li>
+
+      <li>
+	<a href="/library.html" class="top-menu-item">Library</a>
+	<ul class="top-submenu">
+	  <li><a href="/library.html?#articles" class="top-menu-item">Articles</a></li>
+  	  <li><a href="/library.html?#links" class="top-menu-item">Links</a></li>
+  	  <li><a href="/library.html?#encyclopedia" class="top-menu-item">Encyclopedia</a></li>
+	</ul>
+      </li>
+      <li><a href="/contact.html" class="top-menu-item">Contact</a></li>
+    </ul>
+  </nav>
+  
   <main>
-    <div class="content">
-      <p><img src="/img/splash_v1.png" class="hero" /></p>
-      <h2 id="welcome-to-kilobit-labs">Welcome to Kilobit Labs</h2>
-      <p>My name is Christian Saunders and I build services on the Internet. I also help people like you to build services on the Internet. This site is a place for me to experiment and post about what I am working on.</p>
-      <p><em>Topics:</em></p>
+      <div class="light">
+      <div class="center">
+      <div class="line-block">…because <em>every bit</em> counts.</div>
+      <h2 id="who-we-are">Who We Are</h2>
+      <p>We are <strong>Kilobit Labs</strong>; an independent software consultancy and development studio.</p>
+      <h2 id="what-we-do">What We Do</h2>
+      <h3 class="heading" id="we-use-technology-to-solve-problems.">We Use Technology To Solve Problems.</h3>
       <ul>
-      <li><a href="topics/version_control.html">Version Control</a></li>
+      <li>Understanding and evaluating systems.</li>
+      <li>Upgrading, modernizing and migrating systems.</li>
+      <li>Managing and running mission critical services.</li>
       </ul>
-      <p><em>Code:</em></p>
+      <p>Solving your problem starts by checking out our <a href="/services.html">services</a>.</p>
+      <h3 class="heading" id="we-learn-and-teach.">We Learn And Teach.</h3>
       <ul>
-      <li><a href="/go/args/">Args</a> - A command line interface tool for Golang.</li>
-      <li><a href="/go/elements/">Elements</a> - Build markup from simple objects.</li>
-      <li><a href="/go/tested/">TestEd</a> - Simple testing utilities for Golang.</li>
-      <li><a href="/go/stored/">StorEd</a> - A simple storage Interface for Golang.</li>
-      <li><a href="/go/stored-firestore">StorEd-Firestore</a> - A Google <a href="https://cloud.google.com/firestore/">Cloud Firestore</a> driver for <a href="/go/stored">StorEd</a>.</li>
+      <li>Understanding <em>Industry Trends</em>: incorporating - not following.</li>
+      <li>Compiling and filtering <em>Best Practices</em> through the lens of fundamental theory.</li>
       </ul>
-      <p><em>Other Projects:</em></p>
+      <p>For quick answers, detailed analysis and links to the smartest people in technology, see the <a href="/library.html">library</a>.</p>
+      <h3 class="heading" id="we-build.">We Build.</h3>
       <ul>
-      <li><a href="https://github.com/kilobit/ghidra-nspawn">ghidra-nspawn</a> - A self contained environment the Ghidra SRE tools.</li>
+      <li>Up and down the <em>Full Stack</em> of the Web.</li>
+      <li><em>Carrier Grade</em> and <em>SP Networking</em>.</li>
+      <li><em>Identity Systems</em> and <em>Core Services</em>.</li>
+      <li>By Leveraging modern <em>Cryptography</em> and <em>Security</em>.</li>
       </ul>
-      <hr>
-    </div>
+      <p>Come see <a href="/projects.html">what we are working on</a> today.</p>
+      <hr />
+      <p>Tell us how we can use technology to help you, <a href="/contact.html">Contact Us</a>.</p>
+      </div>
+      </div>
+      <div class="newsletter dark">
+      <section id="bits-newsletter" class="center">
+      <h1>3 Bits Newsletter</h1>
+      <p>Short and to the point.</p>
+      <p>Sign up for a periodic email with 3 links from the industry, in context and relevant.</p>
+      <form method="post" action="https://informed-hhqvwewhxq-uw.a.run.app/myapp/">
+      <label for="email">Sign-up with your email:</label> <input id="email" type="text" name="email" placeholder="name@domain.com"> <br /> <label for="name">Your Name (optional):</label> <input id="name" type="text" name="name" placeholder="First Last"> <br /> <input type="submit" value="Sign Up">
+      </form>
+      </section>
+      </div>
+      <div class="light">
+      <section id="projects" class="wide flex_row centered_content">
+      <h1>Projects</h1>
+      <section class="project card hyperbadges">
+      <h2 id="hyperbadges">HyperBadges™</h2>
+      <p><a href="https://hyperbadges.com/"><img src="/img/hyperbadges_logo_500.png" class="hyperbadges" /></a></p>
+      </section>
+      <section class="project card">
+      <p><a href="https://github.com/kilobit"> <img width="149" height="149" src="/img/forkme.png" class="forkme" alt="Fork me on GitHub"> </a></p>
+      <h2 id="golang-libraries">Golang Libraries</h2>
+      <p><img src="/img/Go-Logo_Black.png" class="golang" /></p>
+      <table>
+      <tbody>
+      <tr class="odd">
+      <td style="text-align: left;"><a href="/go/tested/">Args</a></td>
+      <td style="text-align: left;">Simple argument processing.</td>
+      </tr>
+      <tr class="even">
+      <td style="text-align: left;"><a href="/go/tested/">TestEd</a></td>
+      <td style="text-align: left;">Super simple testing utilities.</td>
+      </tr>
+      <tr class="odd">
+      <td style="text-align: left;"><a href="/go/elements/">Elements</a></td>
+      <td style="text-align: left;">Build markup documents out of simple objects.</td>
+      </tr>
+      <tr class="even">
+      <td style="text-align: left;"><a href="/go/stored/">StorEd</a></td>
+      <td style="text-align: left;">A simple storage Interface.</td>
+      </tr>
+      </tbody>
+      </table>
+      <p><a href="/projects.html">more…</a></p>
+      </section>
+      <section class="project card">
+      <p><a href="https://github.com/kilobit/ghidra-nspawn"> <img width="149" height="149" src="/img/forkme.png" class="forkme" alt="Fork me on GitHub"> </a></p>
+      <h2 id="ghidra-nspawn">Ghidra NSpawn</h2>
+      <p><img src="/img/ghidra_1.png" class="ghidra" /></p>
+      <p><a href="https://github.com/kilobit/ghidra-nspawn/">Ghidra-NSpawn</a><br />
+      The Ghidra SRE tool in a self contained environment.</p>
+      </section>
+      </section>
+      </div>
+      <div class="medium">
+      <section id="library" class="wide flex_row centered_content">
+      <h1>Library</h1>
+      <section class="article card">
+      <h2 id="articles">Articles</h2>
+      <div class="stack center">
+      <ul>
+      <li><a href="/library.html#articles"><img src="/img/version_control_v1.png" class="white border shadow padded_2px" /></a></li>
+      </ul>
+      </div>
+      <p>Content by <strong>Kilobit Labs</strong> and guests.</p>
+      <ul>
+      <li><a href="/topics/version_control.html">Version Control</a></li>
+      </ul>
+      </section>
+      <section class="article card">
+      <h2 id="links">Links</h2>
+      <div class="stack center">
+      <ul>
+      <li><a href="/library.html#links"><img src="/img/design_docs_at_google.png" class="white border shadow padded_2px" /></a></li>
+      <li><a href="/library.html#links"><img src="/img/cfb_so_you_want.png" class="white border shadow padded_2px" /></a></li>
+      <li><a href="/library.html#links"><img src="/img/sw_deps.png" class="white border shadow padded_2px" /></a></li>
+      </ul>
+      </div>
+      <div class="line-block">When someone else has said it better…</div>
+      </section>
+      <section class="article card">
+      <h2 id="encyclopedia">Encyclopedia</h2>
+      <div class="stack center">
+      <ul>
+      <li>Addressing</li>
+      <li>Buffering</li>
+      <li>Caching</li>
+      <li>Determinism</li>
+      <li>Entropy</li>
+      </ul>
+      </div>
+      <p>Coming Soon!</p>
+      <div class="line-block">When you need a straight answer.</div>
+      </section>
+      </section>
+      </div>
+      <div class="light border_top border_bottom">
+      <section id="board-of-advisors" class="wide flex_row centered_content">
+      <h1>Board of Advisors</h1>
+      <div class="blurb">
+      <div class="line-block">Limits disappear when we work together…</div>
+      <p>At Kilobit Labs, we depend on other independent professionals to round out our expertise.</p>
+      <p>As simple as a quick check or by combining our skills and resources to accomplish something beyond any one of us.</p>
+      </div>
+      <section id="how-can-you-contribute" class="medium border padded">
+      <h3>How can you contribute?</h3>
+      <form method="post" action="https://informed-hhqvwewhxq-uw.a.run.app/myapp/">
+      <label for="name">Your Name:</label> <input id="name" type="text" name="name" placeholder="First Last"> <br /> <label for="email">Sign-up with your email:</label> <input id="email" type="text" name="email" placeholder="name@domain.com"> <br /> <label for="expertise">What are your areas of expertise?</label>
+      <textarea id="expertise" name="expertise" rows="3" cols="40" 
+        placeholder="DBA, Front-End, Leadership, Business..."></textarea>
+      <br /> <input type="submit" value="Send">
+      </form>
+      </section>
+      </section>
+      </div>
+      <div class="light">
+      <section id="principal-architect" class="wide flex_row centered_content">
+      <h1>Principal Architect</h1>
+      <section class="card">
+      <div class="avatar">
+      <h1>
+      CS
+      </h1>
+      </div>
+      <h2 id="christian-saunders">Christian Saunders</h2>
+      <p>Web - Media - Identity - Networking - Cryptography</p>
+      </section>
+      <div class="blurb">
+      <p>Christian Saunders is the Founder and Principal Architect at <strong>Kilobit Labs</strong>.</p>
+      <div class="line-block">There are 10 types of people… those who understand binary and those who don’t.</div>
+      <p>Fundamentally, with technology we build tools, but it is people using those tools that is how problems are solved.</p>
+      <p>When it comes to building tools, sometimes there is an opportunity to build a tool that works down at a very low level where computing meets the machine. Likewise, at a very high level, we can use the strangeness of math to solve the otherwise impossible.</p>
+      <p>Most work occurs between these extremes. Here persistence, diligence and practice are the ways to get things done.</p>
+      </div>
+      </section>
+      </div>
+      <div class="contact dark">
+      <section id="contact" class="center">
+      <h1>Contact</h1>
+      <p>Please contact us via the from below or see the <a href="/contact.html">contact page</a> for more options.</p>
+      <form method="post" action="https://informed-hhqvwewhxq-uw.a.run.app/myapp/">
+      <label for="email">Your email:</label> <input id="email" type="text" name="email" placeholder="name@domain.com"> <br /> <label for="name">Your Name (optional):</label> <input id="name" type="text" name="name" placeholder="First Last"> <br /> <label for="subject">Subject:</label> <input id="subject" type="text" name="subject" placeholder="Topic"> <br /> <label for="message">Message:</label>
+      <textarea id="message" name="message" onfocus="this.value=''"
+        rows="6" cols="40" placeholder="Your Comments..."></textarea>
+      <br /> <input type="submit" value="Send">
+      </form>
+      </section>
+      </div>
   </main>
 
   <footer>
+    <img class="logo-round" src="/img/logo_round_v3.svg" alt="Kb Logo Round">
     <p class="copyright">&copy; 2019 Kilobit Labs Inc.</p>
   </footer>
+
+  <script type="module" src="/js/main.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html">
+  <meta name="revisit-after" content="1 hours">
+
+  <title>Projects</title>
+
+  <link rel="icon" type="image/png" href="/img/favicon-16.png">
+  
+  <meta name="author" content="Christian Saunders">
+
+  <meta name="description" content="">
+  <meta name="generator" content="pandoc">
+  <meta name="keywords" content="">
+  <!--<meta name="viewport" content="width=device-width, --
+    --initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/kilobit.css">
+  <link rel="stylesheet" href="/css/projects.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="/"><img class="logo" src="/img/logo_v3.png" alt="Kilobit Labs Logo"></a>
+      <h1>Projects</h1>
+      
+      
+    </div>
+  </header>
+
+  <nav role="navigation" class="top-menu">
+    <ul class="top-menu">
+      <li><a href="/" class="top-menu-item">Home</a></li>
+      <li><a href="/projects.html" class="top-menu-item">Projects</a></li>
+      <li>
+	<a href="/services.html" class="top-menu-item">Services</a>
+	<ul class="top-submenu">
+	  <li><a href="/services.html#consulting" class="top-menu-item">Consulting</a></li>
+  	  <li><a href="/services.html#development" class="top-menu-item">Development</a></li>
+  	  <li><a href="/services.html#managed-services" class="top-menu-item">Managed Services</a></li>
+	</ul>
+      </li>
+
+      <li>
+	<a href="/library.html" class="top-menu-item">Library</a>
+	<ul class="top-submenu">
+	  <li><a href="/library.html?#articles" class="top-menu-item">Articles</a></li>
+  	  <li><a href="/library.html?#links" class="top-menu-item">Links</a></li>
+  	  <li><a href="/library.html?#encyclopedia" class="top-menu-item">Encyclopedia</a></li>
+	</ul>
+      </li>
+      <li><a href="/contact.html" class="top-menu-item">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+      <div class="light">
+      <div class="wide flex_row centered_content">
+      <section class="project card hyperbadges">
+      <h2 id="hyperbadges">HyperBadges™</h2>
+      <p><a href="https://hyperbadges.com/"><img src="/img/hyperbadges_logo_500.png" class="hyperbadges" /></a></p>
+      </section>
+      <section id="digital-badges-are-now-10x-better" class="project-text">
+      <h3>Digital badges are now 10x better…</h3>
+      <ul>
+      <li>A fully self-contained profile of the OpenBadges V2.0 Specification.</li>
+      <li>10x Improvement over current badge implementations.</li>
+      <li>Offline validation.</li>
+      <li>Zero server side infrastructure.</li>
+      </ul>
+      </section>
+      </div>
+      </div>
+      <div class="medium">
+      <div class="wide flex_row centered_content">
+      <section class="project card">
+      <p><a href="https://github.com/kilobit"> <img width="149" height="149" src="/img/forkme.png" class="forkme" alt="Fork me on GitHub"> </a></p>
+      <h2 id="golang-libraries">Golang Libraries</h2>
+      <p><img src="/img/Go-Logo_Black.png" class="golang" /></p>
+      <table>
+      <tbody>
+      <tr class="odd">
+      <td style="text-align: left;"><a href="/go/tested/">Args</a></td>
+      <td style="text-align: left;">Simple argument processing.</td>
+      </tr>
+      <tr class="even">
+      <td style="text-align: left;"><a href="/go/tested/">TestEd</a></td>
+      <td style="text-align: left;">Super simple testing utilities.</td>
+      </tr>
+      <tr class="odd">
+      <td style="text-align: left;"><a href="/go/elements/">Elements</a></td>
+      <td style="text-align: left;">Build markup documents out of simple objects.</td>
+      </tr>
+      <tr class="even">
+      <td style="text-align: left;"><a href="/go/stored/">StorEd</a></td>
+      <td style="text-align: left;">A simple storage Interface.</td>
+      </tr>
+      </tbody>
+      </table>
+      <p><a href="/projects.html">more…</a></p>
+      </section>
+      <section id="simpler-development-with-fewer-dependencies" class="project-text">
+      <h3>Simpler development with fewer dependencies…</h3>
+      <p>Storage, interface and testing utilities that make Golang development easier and more predictable.</p>
+      </section>
+      </div>
+      </div>
+      <div class="light">
+      <div class="wide flex_row centered_content">
+      <section class="project card">
+      <p><a href="https://github.com/kilobit/ghidra-nspawn"> <img width="149" height="149" src="/img/forkme.png" class="forkme" alt="Fork me on GitHub"> </a></p>
+      <h2 id="ghidra-nspawn">Ghidra NSpawn</h2>
+      <p><img src="/img/ghidra_1.png" class="ghidra" /></p>
+      <p><a href="https://github.com/kilobit/ghidra-nspawn/">Ghidra-NSpawn</a><br />
+      The Ghidra SRE tool in a self contained environment.</p>
+      </section>
+      <section id="isolated-software-reverse-engineering-environment" class="project-text">
+      <h3>Isolated Software Reverse Engineering Environment…</h3>
+      <p><a href="https://ghidra-sre.org/">Ghidra</a> is a Software Reverse Engineering (SRE) environment developed by the U.S. National Security Agency and released as Open Source.</p>
+      <p>This project builds a custom <em>Ghidra</em> environment that lives within a <em>systemd-nspawn</em> container environment, isolating Ghidra and the software under inspection from the surrounding system.</p>
+      <ul>
+      <li>Based on <em>systemd-nspawn</em> containers.</li>
+      <li>Combine with VMs for safely conducting SRE research on malware.</li>
+      </ul>
+      </section>
+      </div>
+      </div>
+  </main>
+
+  <footer>
+    <img class="logo-round" src="/img/logo_round_v3.svg" alt="Kb Logo Round">
+    <p class="copyright">&copy; 2019 Kilobit Labs Inc.</p>
+  </footer>
+
+  <script type="module" src="/js/main.js"></script>
+
+</body>
+</html>

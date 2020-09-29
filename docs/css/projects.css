@@ -1,0 +1,78 @@
+/* kilobit_v2.css */
+/* Copyright 2020 Kilobit Labs Inc. */
+
+main section.hyperbadges {
+    background-color: black;
+    background-image: radial-gradient(circle at center 40%,
+				      #2d2d2d min(10%, 10%),
+				      #1f485f min(15%, 15%),
+				      #2d2d2d min(20%, 20%),
+				      transparent 90%);
+    color: #3daee9;
+    border: 1px solid #3daee9;
+}
+
+
+img.hyperbadges {
+    width: 100%;
+    margin-top: -5%;
+    animation: spin 20s ease infinite alternate;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(0deg);}
+    60% {transform: rotate(360deg);}
+    70% {transform: rotate(360deg);}
+    80% {transform: rotate(0deg);}
+    90% {transform: rotate(0deg);}
+    100% {transform: rotate(0deg);}
+}
+
+img.forkme {
+    width: 149px;
+    height: 149px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+img.golang {
+    max-width: 90%;
+}
+
+img.ghidra {
+    max-width: 90%;
+}
+
+
+/* ------------------------- */
+
+section.card {
+    max-width: 40vw;
+}
+
+section.project-text {
+    list-style-type: square;
+    max-width: 60ch;
+    padding: 0 2vw 0 2vw;
+}
+
+section.project-text > ul {
+    list-style-type: square;
+    max-width: 60ch;
+}
+
+main > section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+main > section:nth-child(odd) {
+    background-color: white;
+}
+
+main > section:nth-child(even) {
+    background-color: #9e9e9e;
+}

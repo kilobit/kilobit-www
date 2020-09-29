@@ -7,31 +7,62 @@
 
   <title>Managing Version Control</title>
 
+  <link rel="icon" type="image/png" href="/img/favicon-16.png">
+  
   <meta name="author" content="Christian Saunders">
 
   <meta name="description" content="">
   <meta name="generator" content="pandoc">
-  <meta name="keywords" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="version control, building, projects">
+  <!--<meta name="viewport" content="width=device-width, --
+    --initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
   
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/kilobit.css">
 </head>
 
 <body>
 
   <header>
-    <div class="title">
-      <p class="logo">Kilobit Labs Inc.</p>
+    <div class="logo">
+      <a href="/"><img class="logo" src="/img/logo_v3.png" alt="Kilobit Labs Logo"></a>
       <h1>Managing Version Control</h1>
-      <hr>
+      
+      
     </div>
   </header>
 
+  <nav role="navigation" class="top-menu">
+    <ul class="top-menu">
+      <li><a href="/" class="top-menu-item">Home</a></li>
+      <li><a href="/projects.html" class="top-menu-item">Projects</a></li>
+      <li>
+	<a href="/services.html" class="top-menu-item">Services</a>
+	<ul class="top-submenu">
+	  <li><a href="/services.html#consulting" class="top-menu-item">Consulting</a></li>
+  	  <li><a href="/services.html#development" class="top-menu-item">Development</a></li>
+  	  <li><a href="/services.html#managed-services" class="top-menu-item">Managed Services</a></li>
+	</ul>
+      </li>
+
+      <li>
+	<a href="/library.html" class="top-menu-item">Library</a>
+	<ul class="top-submenu">
+	  <li><a href="/library.html?#articles" class="top-menu-item">Articles</a></li>
+  	  <li><a href="/library.html?#links" class="top-menu-item">Links</a></li>
+  	  <li><a href="/library.html?#encyclopedia" class="top-menu-item">Encyclopedia</a></li>
+	</ul>
+      </li>
+      <li><a href="/contact.html" class="top-menu-item">Contact</a></li>
+    </ul>
+  </nav>
+  
   <main>
-    <div class="content">
+      <article>
       <p><img src="/img/version_control_v1.png" class="hero" /></p>
       <p>Small decisions at the beginning of a project can sometimes have much larger and difficult to predict impacts later on. Version control and repository layout are one of those areas where it is important to think ahead and avoid the need for awkward check-in procedures or messy restructuring later.</p>
-      <h1 id="mono-vs-multi-repo" class="mono">Mono vs Multi Repo</h1>
+      <h1 class="mono" id="mono-vs-multi-repo">Mono vs Multi Repo</h1>
       <p>The <em>monorepo</em> vs <em>multirepo</em> issue is about balancing ease of management (particularly at the beginning of a project) with modular design and loose coupling.</p>
       <p>The risk with a <em>multirepo</em> strategy is that it may introduce dependency loops which will lead to build and reliability issues.</p>
       <p>With a <em>monorepo</em> the issue is that build and test must look at all of the systems / code at every check-in. This means longer development cycles, build platform complexity and development systems that require the full suite of tooling etc.</p>
@@ -40,13 +71,15 @@
       <p>This will likely mean some increased complexity in the build / test / deploy process but if done judiciously it should be manageable.</p>
       <p>This also means that you may need to split functionality out of a repo and re-work the build pipeline from time to time.</p>
       <p>No solution is perfect but this seems to balance the <em>pragmatic</em> need to get things done while preserving <em>agility</em>.</p>
-      <hr>
-    </div>
+      </article>
   </main>
 
   <footer>
+    <img class="logo-round" src="/img/logo_round_v3.svg" alt="Kb Logo Round">
     <p class="copyright">&copy; 2019 Kilobit Labs Inc.</p>
   </footer>
+
+  <script type="module" src="/js/main.js"></script>
 
 </body>
 </html>
