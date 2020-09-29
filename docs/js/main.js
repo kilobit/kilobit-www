@@ -33,7 +33,7 @@ import {Drawing, animateFractal} from "./draw.js";
 	    redirect: 'follow',
 	    headers: {
 		'Content-Type': 'application/x-www-form-urlencoded',
-		'X-REQUEST-TIME': '' + Date.now();
+		'X-REQUEST-TIME': '' + Date.now(),
 	    },
 	    body: new URLSearchParams(fd),
 	})
